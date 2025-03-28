@@ -528,6 +528,246 @@ section {
     opacity: 0.8;
 }
 
+/* Volunteer Section Styles */
+.volunteer-section {
+    background-color: hsl(203, 90%, 48%); /* Primary blue background */
+    color: white; /* White text for contrast */
+    padding: 60px 20px;
+}
+
+.volunteer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.volunteer-content {
+    text-align: left;
+}
+
+.volunteer-content .section-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: white;
+    color: hsl(203, 90%, 48%);
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.volunteer-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.volunteer-content .lead-text {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.volunteer-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.benefit-item i {
+    font-size: 2rem;
+    color: white;
+}
+
+.benefit-item h4 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: white;
+}
+
+.benefit-item p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Volunteer Form Styles */
+.volunteer-form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: hsl(203, 90%, 48%);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+button.btn-primary {
+    background-color: hsl(203, 90%, 48%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: hsl(203, 80%, 40%);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: hsl(203, 90%, 48%); /* Primary blue background */
+    color: white; /* White text for contrast */
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white; /* White text for headings */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white; /* White text for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: rgba(255, 255, 255, 0.7); /* Slightly faded white on hover */
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    color: white; /* White icons */
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: rgba(255, 255, 255, 0.7); /* Slightly faded white on hover */
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    color: hsl(203, 90%, 48%);
+    background-color: white; /* White background for input */
+}
+
+.newsletter-form button {
+    padding: 10px;
+    background-color: white; /* White button */
+    color: hsl(203, 90%, 48%); /* Primary blue text */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: hsl(203, 90%, 48%); /* Primary blue background on hover */
+    color: white; /* White text on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7); /* Slightly faded white text */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .about-grid {
@@ -607,6 +847,14 @@ section {
     .news-grid {
         grid-template-columns: 1fr;
     }
+
+    .volunteer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -637,3 +885,4 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
