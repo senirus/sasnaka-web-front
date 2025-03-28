@@ -1,3 +1,18 @@
+// Preloader functionality
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    
+    // Add a small delay to ensure smooth transition
+    setTimeout(() => {
+        preloader.classList.add('fade-out');
+        
+        // Remove preloader from DOM after animation
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 500);
+    }, 1000);
+});
+
 // Scroll Animation
 document.addEventListener('DOMContentLoaded', function() {
     // Intersection Observer for scroll animations
