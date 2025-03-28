@@ -328,7 +328,7 @@ section {
 
 .impact-image img {
     width: 100%; /* Make the image responsive */
-    max-width: 500px; /* Set a maximum width for the image */
+    max-width: 400px; /* Set a maximum width to match the text size */
     height: auto; /* Maintain the aspect ratio */
     border-radius: 10px; /* Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
@@ -388,6 +388,103 @@ section {
 .stat-label {
     font-size: 1rem;
     color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .impact-section {
+        flex-direction: column; /* Stack the image and text vertically on smaller screens */
+        text-align: center;
+    }
+
+    .impact-image {
+        margin-bottom: 20px;
+    }
+
+    .impact-content {
+        padding: 0;
+    }
+
+    .impact-stats {
+        flex-direction: column;
+    }
+}
+
+/* Impact Stats Section */
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(203, 90%, 48%);
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Page Hero Styles for Impact Page */
+.impact-hero {
+    background: linear-gradient(to right, hsl(203, 90%, 48%), hsl(203, 80%, 40%));
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.impact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.impact-hero p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .impact-header h2 {
+        font-size: 2rem;
+    }
+
+    .impact-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .impact-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .impact-hero p {
+        font-size: 1rem;
+    }
+
+    .impact-stats {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Responsive Design */
