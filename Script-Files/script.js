@@ -347,4 +347,111 @@ document.addEventListener('click', (e) => {
         navLinks.classList.remove('active');
         mobileMenuBtn.classList.remove('active');
     }
+});
+
+// Contact Form Validation
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Reset previous errors
+            const errorElements = document.querySelectorAll('.form-error');
+            errorElements.forEach(error => error.style.display = 'none');
+            const inputs = document.querySelectorAll('.form-input');
+            inputs.forEach(input => input.classList.remove('error'));
+
+            let isValid = true;
+
+            // Validate Name
+            const nameInput = document.getElementById('name');
+            if (!nameInput.value.trim()) {
+                document.getElementById('nameError').textContent = 'Name is required';
+                document.getElementById('nameError').style.display = 'block';
+                nameInput.classList.add('error');
+                isValid = false;
+            }
+
+            // Validate Email
+            const emailInput = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailInput.value.trim() || !emailRegex.test(emailInput.value)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address';
+                document.getElementById('emailError').style.display = 'block';
+                emailInput.classList.add('error');
+                isValid = false;
+            }
+
+            // Validate Subject
+            const subjectInput = document.getElementById('subject');
+            if (!subjectInput.value) {
+                document.getElementById('subjectError').textContent = 'Please select a subject';
+                document.getElementById('subjectError').style.display = 'block';
+                subjectInput.classList.add('error');
+                isValid = false;
+            }
+
+            // Validate Message
+            const messageInput = document.getElementById('message');
+            if (!messageInput.value.trim()) {
+                document.getElementById('messageError').textContent = 'Message is required';
+                document.getElementById('messageError').style.display = 'block';
+                messageInput.classList.add('error');
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Show success message
+                const submitBtn = contactForm.querySelector('.submit-btn');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                submitBtn.style.background = '#28a745';
+                submitBtn.disabled = true;
+
+                // Reset form after delay
+                setTimeout(() => {
+                    contactForm.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.style.background = '';
+                    submitBtn.disabled = false;
+                }, 3000);
+            }
+        });
+
+        // Real-time validation
+        const inputs = document.querySelectorAll('.form-input');
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                if (this.classList.contains('error')) {
+                    this.classList.remove('error');
+                    const errorElement = document.getElementById(this.id + 'Error');
+                    if (errorElement) {
+                        errorElement.style.display = 'none';
+                    }
+                }
+            });
+        });
+    }
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (faqItems.length > 0) {
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    }
 }); 
