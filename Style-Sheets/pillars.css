@@ -1,5 +1,216 @@
 /* Pillars Page Specific Styles */
 
+/* Page Hero Section */
+.page-hero {
+    background: linear-gradient(180deg, #14255A 0%, #0066cc 100%);
+    padding: 120px 20px;
+    text-align: center;
+    margin: 120px 50px 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(20, 37, 90, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../Assets/pattern.png');
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    animation: fadeInDown 0.8s ease;
+    color: white;
+}
+
+.page-hero p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease;
+}
+
+/* Pillar Detail Section */
+.pillar-detail-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.pillar-detail-section.bg-light {
+    background: #f8f9fa;
+}
+
+.pillar-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.pillar-header i {
+    font-size: 48px;
+    color: #0066cc;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.pillar-header h2 {
+    font-size: 36px;
+    color: #14255A;
+    font-weight: 600;
+}
+
+/* Initiatives Grid */
+.initiatives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    padding: 0 20px;
+}
+
+.initiative-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(20, 37, 90, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.initiative-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 32px rgba(20, 37, 90, 0.15);
+}
+
+.initiative-card h3 {
+    color: #14255A;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.initiative-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #0066cc;
+    border-radius: 8px;
+    color: #0066cc;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #0066cc;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .page-hero {
+        padding: 100px 20px;
+        margin: 100px 30px 30px 30px;
+    }
+
+    .page-hero h1 {
+        font-size: 40px;
+    }
+
+    .pillar-header h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 80px 20px;
+        margin: 90px 20px 20px 20px;
+    }
+
+    .page-hero h1 {
+        font-size: 36px;
+    }
+
+    .pillar-detail-section {
+        padding: 60px 0;
+    }
+
+    .initiatives-grid {
+        gap: 24px;
+    }
+
+    .initiative-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        padding: 60px 15px;
+        margin: 80px 15px 15px 15px;
+        border-radius: 16px;
+    }
+
+    .page-hero h1 {
+        font-size: 32px;
+    }
+
+    .page-hero p {
+        font-size: 16px;
+    }
+
+    .pillar-header i {
+        font-size: 40px;
+    }
+
+    .pillar-header h2 {
+        font-size: 28px;
+    }
+
+    .initiative-card h3 {
+        font-size: 20px;
+    }
+}
+
 /* Pillars Hero Section */
 .pillars-hero {
     min-height: 60vh;
