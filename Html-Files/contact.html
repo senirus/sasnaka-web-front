@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../Style-Sheets/styles.css">
     <link rel="stylesheet" href="../Style-Sheets/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -33,134 +34,189 @@
         </div>
     </nav>
 
-    <!-- Contact Hero Section -->
+    <!-- Hero Section -->
     <section class="contact-hero">
-        <div class="container">
-            <div class="contact-hero-content">
-                <h1>Get in Touch</h1>
-                <p class="lead-text">We'd love to hear from you. Reach out to us for any inquiries, partnerships, or to learn more about our initiatives.</p>
-            </div>
+        <div class="hero-content">
+            <h1>Connect With Us</h1>
+            <p>Join our community and be part of the change. Whether you have questions, ideas for collaboration, or want to support our cause, we're here to help.</p>
         </div>
+        <div class="hero-pattern"></div>
     </section>
 
-    <!-- Contact Information Section -->
-    <section class="contact-info">
+    <!-- Main Content -->
+    <main class="contact-section">
         <div class="container">
+            <!-- Contact Grid -->
             <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Visit Us</h3>
+                            <p>123 Main Street, Colombo</p>
+                            <p class="info-detail">Sri Lanka</p>
+                            <p class="info-detail">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        </div>
                     </div>
-                    <h3>Visit Us</h3>
-                    <p>123 Main Street<br>Colombo, Sri Lanka</p>
-                    <div class="contact-details">
-                        <p><i class="fas fa-clock"></i> Mon - Fri: 9:00 AM - 5:00 PM</p>
-                        <p><i class="fas fa-phone"></i> +94 11 234 5678</p>
-                        <p><i class="fas fa-envelope"></i> info@sasnakasansada.org</p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>Social Media</h3>
-                    <p>Connect with us on social media for updates and news</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope-open-text"></i>
-                    </div>
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for updates and opportunities</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email">
-                        <button type="submit" class="btn-primary">Subscribe <i class="fas fa-arrow-right"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
-        <div class="container">
-            <div class="form-grid">
-                <div class="form-content">
-                    <div class="section-badge">
-                        <i class="fas fa-envelope"></i> Send Message
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>+94 11 234 5678</p>
+                            <p class="info-detail">Available during business hours</p>
+                            <p class="info-detail">24/7 Emergency Support</p>
+                        </div>
                     </div>
-                    <h2>Contact Us</h2>
-                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-                    <div class="form-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Quick Response</span>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>24/7 Support</span>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>info@sasnakasansada.org</p>
+                            <p class="info-detail">Response within 24 hours</p>
+                            <p class="info-detail">Support available in English and Sinhala</p>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Secure Communication</span>
+                    </div>
+
+                    <div class="social-connect">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/sasnaka/" target="_blank" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/sasnakasansada" target="_blank" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/sasnaka/" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/sasnakasansada/" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Contact Form -->
                 <div class="form-container">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
+                    <div class="form-header">
+                        <h2>Send us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you shortly.</p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" class="form-input" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-input" placeholder="Enter your email address" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-input" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" class="form-input" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="volunteer">Volunteer Opportunity</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="donation">Donation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select Subject</option>
-                                <option value="general">General Inquiry</option>
-                                <option value="volunteer">Volunteer Opportunity</option>
-                                <option value="partnership">Partnership</option>
-                                <option value="donation">Donation</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
+
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <textarea id="message" class="form-input" rows="4" placeholder="Type your message here" required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">Send Message <i class="fas fa-arrow-right"></i></button>
+
+                        <button type="submit" class="submit-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="container">
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.798467148148!2d79.8487314!3d6.9270796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259631d38f527%3A0x1b0c0c0c0c0c0c0c!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1648123456789!5m2!1sen!2slk" 
-                    width="100%" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
-        </div>
-    </section>
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How can I volunteer with Sasnaka Sansada?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can volunteer by filling out our volunteer application form on the Volunteer page. We have various opportunities available throughout the year.</p>
+                        </div>
+                    </div>
 
-   <!-- Footer -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What types of partnerships do you offer?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer various partnership opportunities including project collaborations, sponsorships, and long-term strategic partnerships.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How can I make a donation?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can make donations through our secure online platform or by contacting our team directly for other donation methods.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What areas do you serve?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We serve communities across Sri Lanka with a focus on education, healthcare, and sustainable development initiatives.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map Section -->
+            <section class="map-section">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.798467148148!2d79.8487314!3d6.9270796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259631d38f527%3A0x1b0c0c0c0c0c0c0c!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1648123456789!5m2!1sen!2slk" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 16px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -214,6 +270,14 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
     <script src="../Script-Files/script.js"></script>
 </body>
 </html> 
