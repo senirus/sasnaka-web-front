@@ -1,3 +1,198 @@
+/* Projects Page Styles */
+
+/* Most Popular Section */
+.most-popular {
+    padding: 50px;
+    background: linear-gradient(135deg, #0047AB 0%, #00B4DB 100%);
+    border-radius: 30px;
+    margin: 30px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.stem-pillar .section-title {
+    color: #333;
+    margin: 30px 0;
+}
+
+/* Projects Grid */
+.most-popular .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.stem-pillar .projects-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 0 40px;
+}
+
+/* Project Card - Most Popular */
+.most-popular .project-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 16px;
+}
+
+.most-popular .project-image {
+    flex: 0 0 180px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 120px;
+}
+
+.most-popular .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transform: scale(1.02); /* Slight scale to prevent white edges */
+}
+
+.most-popular .project-image h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 16px 12px;
+    margin: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.most-popular .project-card p {
+    flex: 1;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    margin: 8px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Project Card - STEM Pillar */
+.stem-pillar .project-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stem-pillar .project-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/10;
+    border-radius: 12px;
+}
+
+.stem-pillar .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.02); /* Slight scale to prevent white edges */
+}
+
+.stem-pillar .project-image h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 16px 12px;
+    margin: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stem-pillar .project-card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    margin: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* STEM Pillar Section */
+.stem-pillar {
+    padding: 30px 0;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.stem-pillar .section-title {
+    color: #333;
+    margin: 30px 0;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.stem-pillar .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 0 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .stem-pillar .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+    
+    .stem-pillar .section-title {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stem-pillar .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .stem-pillar .project-image {
+        aspect-ratio: 16/9;
+    }
+    
+    .stem-pillar .section-title {
+        padding-left: 16px;
+    }
+}
+
 /* Projects Page Specific Styles */
 
 /* Projects Hero Section */
@@ -33,7 +228,7 @@
 /* Projects Grid Section */
 .projects-grid {
     padding: 5rem 0;
-    background-color: var(--background);
+    
 }
 
 .projects-container {
