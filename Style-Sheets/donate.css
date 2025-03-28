@@ -1,0 +1,392 @@
+/* Donate Page Styles */
+.donate-section {
+    padding: 120px 20px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.donate-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: start;
+}
+
+.donate-content {
+    max-width: 600px;
+}
+
+.donate-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.donate-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.card-payment-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #00B4DB;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 25px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.card-payment-btn:hover {
+    background: #0099c1;
+}
+
+/* Bank Details Card */
+.bank-details {
+    background: #14255A;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.bank-details h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.bank-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    font-size: 13px;
+}
+
+.bank-info-item {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.bank-info-item strong {
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Image Placeholders */
+.donate-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-placeholder {
+    background: #f0f0f0;
+    border-radius: 8px;
+    height: 180px;
+    width: 100%;
+}
+
+/* Resource and Support Forms */
+.form-section {
+    background: linear-gradient(180deg, #14255A 0%, #0066cc 100%);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.form-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.form-image-container {
+    width: 100%;
+}
+
+.form-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-description {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.95;
+    margin-bottom: 15px;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+textarea.form-input {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 14px;
+    background: white;
+    color: #14255A;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 992px) {
+    .donate-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .donate-content {
+        max-width: 100%;
+    }
+
+    .bank-details {
+        max-width: 100%;
+    }
+
+    .donate-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .image-placeholder {
+        width: calc(50% - 8px);
+        height: 160px;
+    }
+
+    .image-placeholder:last-child {
+        width: 100%;
+    }
+
+    .donate-section {
+        padding: 100px 20px 40px;
+    }
+
+    .form-grid {
+        grid-template-columns: 300px 1fr;
+        gap: 30px;
+    }
+
+    .form-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .donate-section {
+        padding: 80px 20px 40px;
+    }
+
+    .donate-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .donate-description {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .card-payment-btn {
+        padding: 8px 20px;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .bank-details {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .bank-details h2 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .bank-info-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .bank-info-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .bank-info-item strong {
+        min-width: 110px;
+    }
+
+    .form-section {
+        padding: 25px;
+        border-radius: 12px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .form-image {
+        height: 180px;
+    }
+
+    .form-description {
+        font-size: 13px;
+        opacity: 0.9;
+    }
+
+    .form-fields {
+        gap: 15px;
+    }
+
+    .form-input {
+        padding: 12px;
+        font-size: 13px;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .form-input::placeholder {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .submit-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .donate-section {
+        padding: 100px 15px 20px;
+    }
+
+    .donate-title {
+        font-size: 22px;
+    }
+
+    .donate-description {
+        font-size: 13px;
+        color: #555;
+    }
+
+    .bank-details {
+        padding: 12px;
+        border-radius: 6px;
+    }
+
+    .donate-images {
+        display: none;
+    }
+
+    .bank-info-item {
+        padding: 4px 0;
+    }
+
+    .bank-info-item strong {
+        min-width: 100px;
+    }
+
+    .form-section {
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .form-section h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-grid {
+        gap: 20px;
+    }
+
+    .form-image {
+        height: 160px;
+        border-radius: 8px;
+    }
+
+    .form-fields {
+        gap: 12px;
+    }
+
+    .form-input {
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    textarea.form-input {
+        height: 100px;
+    }
+
+    .form-description {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+} 
