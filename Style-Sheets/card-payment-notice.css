@@ -1,0 +1,68 @@
+.notice-section {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    text-align: center; /* Center text */
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.notice-title {
+    font-size: 3rem;
+    color: hsl(203, 90%, 48%);
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.notice-description {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: hsl(203, 90%, 48%);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: hsl(203, 80%, 40%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.notice-section .icon {
+    font-size: 4rem;
+    color: hsl(203, 90%, 48%);
+    margin-bottom: 20px;
+    animation: bounce 1.5s infinite;
+}
+
+/* Add a subtle bounce animation for the icon */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
