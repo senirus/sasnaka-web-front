@@ -299,7 +299,7 @@ section {
     width: 180px;
     height: auto;
     margin-bottom: 30px;
-    filter: brightness(0) invert(1);
+    filter: brightness(-10) invert(1);
 }
 
 .social-links {

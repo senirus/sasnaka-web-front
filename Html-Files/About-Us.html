@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title displayed in browser tab -->
     <title>About Us | Sasnaka Sansada</title>
-    <link rel="stylesheet" href="../Style-Sheets/styles.css">
-    <link rel="stylesheet" href="../Style-Sheets/About-Us.css">
-    <link rel="stylesheet" href="../Style-Sheets/animations.css">
+    
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="../Style-Sheets/styles.css"> <!-- Main styles -->
+    <link rel="stylesheet" href="../Style-Sheets/About-Us.css"> <!-- Page-specific styles -->
+    <link rel="stylesheet" href="../Style-Sheets/animations.css"> <!-- Animation styles -->
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Preloader -->
+    <!-- Preloader - Shows while page is loading -->
     <div id="preloader">
         <div class="loader">
             <img src="../Assets/Sasnaka-Logo.png" alt="Sasnaka Logo">
         </div>
     </div>
-    <!-- Navigation -->
+    
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
+            <!-- Logo linking to homepage -->
             <div class="logo">
                 <a href="../Html-Files/index.html">
                     <img src="../Assets/logo.png" alt="Sasnaka Sansada Logo">
                 </a>            
             </div>
+            
+            <!-- Navigation links -->
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="About-Us.html">About Us</a>
                 <a href="initiatives.html">Initiatives</a>
-                <a href="impact.html">Impact</a>
+                <!-- <a href="impact.html">Impact</a> -->
                 <a href="volunteer.html">Volunteer</a>
                 <a href="contact.html">Contact</a>
-                <a href="#join" class="btn-primary">Join Us <i class="fas fa-arrow-right"></i></a>
+                <a href="volunteer.html" class="btn-primary">Join Us <i class="fas fa-arrow-right"></i></a>
             </div>
+            
+            <!-- Mobile menu toggle (hamburger icon) -->
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-    <!-- About Hero Section -->
+    <!-- About Us Hero Section - Main banner at top of page -->
     <section class="about-hero">
         <div class="container">
             <div class="about-hero-content animate-fadeInUp">
                 <h1>Our Journey Since 1997</h1>
-                <p class="lead-text">Building a just and equitable society through youth-led initiatives and sustainable community development.</p>
+                <p style="color:rgb(255, 255, 255)" class="lead-text">Building a just and equitable society through youth-led initiatives and sustainable community development.</p>
             </div>
         </div>
     </section>
 
-    <!-- Our Story Section -->
+    <!-- Our Story Section - History of the organization -->
     <section class="story-section">
         <div class="container">
             <div class="story-grid">
+                <!-- Text content about the organization's history -->
                 <div class="story-content animate-fadeInLeft">
                     <div class="section-badge">
                         <i class="fas fa-book-open"></i> Our Story
@@ -62,17 +78,20 @@
                     <p>Founded in 1997 by a group of visionary young leaders, Sasnaka Sansada emerged from a shared commitment to create positive social change. What started as a small initiative has grown into a nationwide movement, touching lives across 25 districts in Sri Lanka.</p>
                     <p>Our founders believed in the power of youth to drive meaningful change in society. They envisioned an organization that would not just provide services but would empower communities through education, leadership, and sustainable development.</p>
                 </div>
+                
+                <!-- Image accompanying the story -->
                 <div class="story-image animate-fadeInRight">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" alt="Sasnaka Sansada History" loading="lazy" class="hover-scale">
+                    <img src="../Assets/about-us.jpg" alt="Sasnaka Sansada History" loading="lazy" class="hover-scale">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission & Vision Section -->
+    <!-- Mission & Vision Section - Core purpose and future goals -->
     <section class="mission-section">
         <div class="container">
             <div class="mission-grid">
+                <!-- Mission card -->
                 <div class="mission-card animate-fadeInUp delay-1 hover-lift">
                     <div class="mission-icon">
                         <i class="fas fa-bullseye"></i>
@@ -86,6 +105,8 @@
                         <li><i class="fas fa-check"></i> Building sustainable communities</li>
                     </ul>
                 </div>
+                
+                <!-- Vision card -->
                 <div class="mission-card animate-fadeInUp delay-2 hover-lift">
                     <div class="mission-icon">
                         <i class="fas fa-eye"></i>
@@ -104,7 +125,7 @@
         </div>
     </section>
 
-    <!-- Values Section -->
+    <!-- Values Section - Core principles of the organization -->
     <section class="values-section">
         <div class="container">
             <div class="section-header animate-fadeInUp">
@@ -114,6 +135,8 @@
                 <h2>Core Principles</h2>
                 <p>The foundation of everything we do</p>
             </div>
+            
+            <!-- Grid of value cards -->
             <div class="values-grid">
                 <div class="value-card animate-fadeInUp delay-1 hover-lift">
                     <i class="fas fa-heart"></i>
@@ -139,7 +162,7 @@
         </div>
     </section>
 
-    <!-- Team Section -->
+    <!-- Team Section - Showcasing organization leadership -->
     <section class="team-section">
         <div class="container">
             <div class="section-header animate-fadeInUp">
@@ -154,108 +177,139 @@
             <div class="team-category">
                 <h3 class="animate-fadeInLeft">Executive Committee</h3>
                 <div class="team-grid">
+                    <div class="team-card placeholder-card"></div> <!-- Empty placeholder for layout -->
                     <div class="team-card animate-fadeInUp delay-1 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop" alt="Executive Committee Member" loading="lazy" class="hover-scale">
-                        <h4>President</h4>
-                        <p>Leading the organization's strategic direction and vision</p>
+                        <img src="../Assets/hasitha.jpg" alt="Executive Committee Member" loading="lazy" class="hover-scale">
+                        <h4>Mr. Hasitha Wijesundara</h4>
+                        <p>President</p>
                     </div>
-                    <div class="team-card animate-fadeInUp delay-2 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop" alt="Executive Committee Member" loading="lazy" class="hover-scale">
-                        <h4>Secretary</h4>
-                        <p>Overseeing organizational operations and communications</p>
-                    </div>
-                    <div class="team-card animate-fadeInUp delay-3 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="Executive Committee Member" loading="lazy" class="hover-scale">
-                        <h4>Treasurer</h4>
-                        <p>Managing financial resources and sustainability</p>
-                    </div>
+                    <div class="team-card placeholder-card"></div> <!-- Empty placeholder for layout -->
                 </div>
             </div>
 
-            <!-- Pillar Heads -->
+            <!-- Pillar Heads - Leaders of different organizational pillars -->
             <div class="team-category">
                 <h3 class="animate-fadeInLeft">Pillar Heads</h3>
                 <div class="team-grid">
                     <div class="team-card animate-fadeInUp delay-1 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=300&fit=crop" alt="STEAM Education Pillar Head" loading="lazy" class="hover-scale">
-                        <h4>STEAM Education Pillar Head</h4>
-                        <p>Leading educational initiatives and innovation</p>
+                        <img src="../Assets/binura.png" alt="STEAM Education Pillar Head" loading="lazy" class="hover-scale">
+                        <h4>STEAM Pillar Head</h4>
+                        <p>Binura Senevirathna</p>
                     </div>
                     <div class="team-card animate-fadeInUp delay-2 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=300&h=300&fit=crop" alt="Entrepreneurship Pillar Head" loading="lazy" class="hover-scale">
-                        <h4>Entrepreneurship Pillar Head</h4>
-                        <p>Driving business development and innovation</p>
+                        <img src="..//Assets/Ravishan.png" alt="Entrepreneurship Pillar Head" loading="lazy" class="hover-scale">
+                        <h4>Entrepreneurship & Business Pillar Head</h4>
+                        <p>Ravishan Kumarathunga</p>
                     </div>
                     <div class="team-card animate-fadeInUp delay-3 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop" alt="Leadership Pillar Head" loading="lazy" class="hover-scale">
-                        <h4>Leadership Pillar Head</h4>
-                        <p>Nurturing future leaders and change-makers</p>
+                        <img src="..//Assets/subath.png" alt="Leadership Pillar Head" loading="lazy" class="hover-scale">
+                        <h4>Leadership & Grooming Pillar Head</h4>
+                        <p>Subath Hewanayake</p>
                     </div>
                     <div class="team-card animate-fadeInUp delay-4 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="Social Service Pillar Head" loading="lazy" class="hover-scale">
+                        <img src="..//Assets/Shaveen.png" alt="Social Service Pillar Head" loading="lazy" class="hover-scale">
                         <h4>Social Service Pillar Head</h4>
-                        <p>Leading community development initiatives</p>
+                        <p>Shaveen Karunarathna</p>
                     </div>
                 </div>
             </div>
-
+            
+            <!-- Centered section for additional pillar heads -->
+            <center>
             <!-- Deputy Pillar Heads -->
+            <div class="team-category">
+                <div class="team-grid">
+                    <div class="team-card animate-fadeInUp delay-1 hover-lift">
+                        <img src="../Assets/madhura.png" alt="STEAM Education Deputy" loading="lazy" class="hover-scale">
+                        <h4>Profiling & Corperate Affairs Pillar Head</h4>
+                        <p>Madhura Senevirathna</p>
+                    </div>
+                    <div class="team-card animate-fadeInUp delay-2 hover-lift">
+                        <img src="..//Assets/Isuru.png" alt="Entrepreneurship Deputy" loading="lazy" class="hover-scale">
+                        <h4>Membership Development Pillar Head </h4>
+                        <p>Isuru Manuppriya</p>
+                    </div>
+                    <div class="team-card animate-fadeInUp delay-3 hover-lift">
+                        <img src="../Assets/lohan.png" alt="Leadership Deputy" loading="lazy" class="hover-scale">
+                        <h4>Partnerhsip Development Pillar Head</h4>
+                        <p>Lohan Athapaththu</p>
+                    </div>
+                    <!-- Empty placeholder card -->
+                    <div class="team-card placeholder-card"></div>
+                </div>
+            </div>
+        </center>
+        
+            <!-- Management Team - Deputy leaders -->
             <div class="team-category">
                 <h3 class="animate-fadeInLeft">Deputy Pillar Heads</h3>
                 <div class="team-grid">
                     <div class="team-card animate-fadeInUp delay-1 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="STEAM Education Deputy" loading="lazy" class="hover-scale">
-                        <h4>STEAM Education Deputy</h4>
-                        <p>Supporting educational programs and initiatives</p>
+                        <img src="..//Assets/savithis.png" alt="Project Manager" loading="lazy" class="hover-scale">
+                        <h4>STEAM Deputy Pillar Head</h4>
+                        <p>Savithi Hansadi</p>
                     </div>
                     <div class="team-card animate-fadeInUp delay-2 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop" alt="Entrepreneurship Deputy" loading="lazy" class="hover-scale">
-                        <h4>Entrepreneurship Deputy</h4>
-                        <p>Assisting in business development programs</p>
+                        <img src="..//Assets/chamidu.png" alt="Operations Manager" loading="lazy" class="hover-scale">
+                        <h4>Entrepreneurship & Business Deputy Pillar Head</h4>
+                        <p>Chamodi Sashinika</p>
                     </div>
                     <div class="team-card animate-fadeInUp delay-3 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=300&fit=crop" alt="Leadership Deputy" loading="lazy" class="hover-scale">
-                        <h4>Leadership Deputy</h4>
-                        <p>Supporting leadership development programs</p>
+                        <img src="..//Assets/Nikini.png" alt="Finance Manager" loading="lazy" class="hover-scale">
+                        <h4>Leadership & Grooming Deputy Pillar Head</h4>
+                        <p>Nikini Tharindya</p>
                     </div>
                     <div class="team-card animate-fadeInUp delay-4 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Social Service Deputy" loading="lazy" class="hover-scale">
-                        <h4>Social Service Deputy</h4>
-                        <p>Assisting in community service initiatives</p>
+                        <img src="..//Assets/pasindu.png" alt="Communications Manager" loading="lazy" class="hover-scale">
+                        <h4>Social Service Deputy Pillar Head</h4>
+                        <p>Pasindu Chinthaka</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Management Team -->
+            <!-- Additional team members section -->
             <div class="team-category">
-                <h3 class="animate-fadeInLeft">Management Team</h3>
                 <div class="team-grid">
                     <div class="team-card animate-fadeInUp delay-1 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&h=300&fit=crop" alt="Project Manager" loading="lazy" class="hover-scale">
-                        <h4>Project Manager</h4>
-                        <p>Coordinating project implementation and delivery</p>
+                        <img src="..//Assets/yasirubandara.png" alt="Project Manager" loading="lazy" class="hover-scale">
+                        <h4>Profiling & Corperate Co-Deputy Pillar Head</h4>
+                        <p>Yasiru Bandara</p>
                     </div>
                     <div class="team-card animate-fadeInUp delay-2 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop" alt="Operations Manager" loading="lazy" class="hover-scale">
-                        <h4>Operations Manager</h4>
-                        <p>Managing day-to-day organizational operations</p>
+                        <img src="..//Assets/Ovindu.png" alt="Operations Manager" loading="lazy" class="hover-scale">
+                        <h4>Profiling & Corperate Co-Deputy Pillar Head</h4>
+                        <p>Ovindu Yehan</p>
                     </div>
                     <div class="team-card animate-fadeInUp delay-3 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="Finance Manager" loading="lazy" class="hover-scale">
-                        <h4>Finance Manager</h4>
-                        <p>Overseeing financial planning and management</p>
+                        <img src="..//Assets/chalana.png" alt="Finance Manager" loading="lazy" class="hover-scale">
+                        <h4>Membership Development Co-Deputy Pillar Head</h4>
+                        <p>Chalana Gayan</p>
                     </div>
                     <div class="team-card animate-fadeInUp delay-4 hover-lift">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="Communications Manager" loading="lazy" class="hover-scale">
-                        <h4>Communications Manager</h4>
-                        <p>Managing external and internal communications</p>
+                        <img src="..//Assets/sanjaya.png" alt="Communications Manager" loading="lazy" class="hover-scale">
+                        <h4>Membership Development Co-Deputy Pillar Head</h4>
+                        <p>Sanjaya Perera</p>
                     </div>
+                </div>
+            </div>
+            
+            <!-- Final team members section -->
+            <div class="team-category">
+                <div class="team-grid">
+                    <div class="team-card animate-fadeInUp delay-1 hover-lift">
+                        <img src="../Assets/Sasmitha.png" alt="STEAM Education Deputy" loading="lazy" class="hover-scale">
+                        <h4>Partnerhsip Development Deputy Pillar Head</h4>
+                        <p>Sasmitha Jayasinghe</p>
+                    </div>
+                    <div class="team-card placeholder-card"></div>
+                   <div class="team-card placeholder-card"></div>
+                    <div class="team-card placeholder-card"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -289,34 +343,35 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="About-Us.html">About Us</a></li>
-                            <li><a href="projects.html">Projects</a></li>
+                            <!-- <li><a href="projects.html">Projects</a></li> -->
                             <li><a href="Support-Us.html">Support Us</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
 
-                    <!-- Contact Us Section -->
+                    <!-- Contact Information Section -->
                     <div class="footer-section">
                         <h3>Contact Us</h3>
                         <ul>
                             <li><span>+94 112 234 645</span></li>
-                            <li><span>sasnakasansadafoundation@gmail.com</span></li>
-                            <li><span>Sasnaka Sansada Foundation,</span></li>
+                            <li><span>info@sasnaka.org</span></li>
+                            <li><span>Sasnaka Sansada Foundation</span></li>
                             <li><span>186/34, Pemaluwa Road,</span></li>
-                            <li><span>Battaramulla,</span></li>
-                            <li><span>Sri Lanka.</span></li>
+                            <li><span>Battaramulla</span></li>
+                            <li><span>Sri Lanka</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Footer Bottom -->
+            <!-- Copyright Notice -->
             <div class="footer-bottom">
                 <p>&copy; 2025 Sasnaka Sansada. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript file -->
     <script src="../Script-Files/script.js"></script>
 </body>
-</html> 
+</html>

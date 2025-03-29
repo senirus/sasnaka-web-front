@@ -19,6 +19,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
+    color: white;
 }
 
 .about-hero-content h1 {
@@ -126,6 +127,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+}
+
+.placeholder-card {
+    visibility: hidden;
 }
 
 .value-card {
