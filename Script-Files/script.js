@@ -10,7 +10,7 @@ window.addEventListener('load', function() {
         setTimeout(() => {
             preloader.style.display = 'none';
         }, 500);
-    }, 100);
+    }, 1000);
 });
 
 // Scroll Animation
