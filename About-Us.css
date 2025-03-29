@@ -3,7 +3,7 @@
 /* About Hero Section */
 .about-hero {
     min-height: 60vh;
-    background: linear-gradient(#000000b3, #000000b3), url('../Assets/about.jpg');
+    background: linear-gradient(#000000b3, #000000b3), url('about.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
